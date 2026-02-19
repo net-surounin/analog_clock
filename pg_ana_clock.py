@@ -113,14 +113,30 @@ while True:
     clock.tick(100)
 
     ### イベント処理
+    # ゲームループ
+running = True
+while running:
     for event in pygame.event.get():
-        if event.type == KEYDOWN and event.key == K_ESCAPE:
-            break
-    else:
-        continue
+        if event.type == pygame.QUIT:
+            running = False
+        # ESCキーで終了（タイトルバーがないため、終了処理を追加すると便利）
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                running = False
 
-    ### whileループ終了
-    break
+    screen.fill((0, 0, 0)) # 黒色でクリア
+    pygame.display.flip()
+
+pygame.quit()
+
+# for event in pygame.event.get():
+#        if event.type == KEYDOWN and event.key == K_ESCAPE:
+#            break
+#    else:
+#        continue
+#
+#    ### whileループ終了
+#    break
 
 ### 終了処理
 pygame.quit()
