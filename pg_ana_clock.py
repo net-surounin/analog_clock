@@ -11,8 +11,8 @@ RADIUS   = 250      # 半径
 NEEDLE_H = 165      # 短針
 NEEDLE_M = 195      # 長針
 NEEDLE_S = 240      # 秒針
-MARK_H   = 205      # 時字
-MARK_M   = 270      # 分字
+MARK_H   = 200      # 時字
+MARK_M   = 273      # 分字
 BASE_AGL = 90       # 基準角度
 CENTER   = int(WIDTH/2),int(HEIGHT/2)
 
