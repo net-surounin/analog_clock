@@ -8,10 +8,10 @@ from pygame.locals import *
 WIDTH    =1024      # 幅
 HEIGHT   = 600      # 高さ
 RADIUS   = 250      # 半径
-NEEDLE_H = 185      # 短針
-NEEDLE_M = 210      # 長針
+NEEDLE_H = 165      # 短針
+NEEDLE_M = 195      # 長針
 NEEDLE_S = 240      # 秒針
-MARK_H   = 225      # 時字
+MARK_H   = 205      # 時字
 MARK_M   = 270      # 分字
 BASE_AGL = 90       # 基準角度
 CENTER   = int(WIDTH/2),int(HEIGHT/2)
@@ -69,7 +69,7 @@ while running:
     for mark,angle in dic.items():
 
         ### 時字作成
-        font = pygame.font.SysFont(None, 40)
+        font = pygame.font.SysFont(None, 100)
         text = font.render(mark, True, (128,255,255))
 
         ### 座標設定
@@ -84,7 +84,7 @@ while running:
     for mark,angle in dic.items():
 
         ### 分字作成
-        font = pygame.font.SysFont(None, 30)
+        font = pygame.font.SysFont(None, 48)
         text = font.render(mark, True, (128,255,255))
 
         ### 座標設定
