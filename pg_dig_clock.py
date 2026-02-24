@@ -8,7 +8,7 @@ from pygame.locals import *
 WIDTH  = 1024   # 幅
 HEIGHT =  600   # 高
 FONTS  = "Monospace" # フォントフェース
-POINTS =  300   # フォントポイント
+POINTS =  360   # フォントポイント
 
 os.environ["DISPLAY"] = ":0.0" # メインディスプレイ
 
