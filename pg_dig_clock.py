@@ -5,8 +5,10 @@ import pygame
 from pygame.locals import *
 
 ### 定数
-WIDTH  = 400    # 幅
-HEIGHT = 200    # 高さ
+WIDTH  = 1024   # 幅
+HEIGHT =  600   # 高
+FONTS  = "ocrb" # フォントフェース
+POINTS =   80   # フォントポイント
 
 ### モジュール初期化
 pygame.init()
@@ -27,7 +29,7 @@ while True:
     now = datetime.datetime.now()
 
     ### 時刻フォント設定
-    font = pygame.font.SysFont( "ocrb", 80)
+    font = pygame.font.SysFont( FONTS, POINTS)
     time = "{:02}:{:02}:{:02}".format( now.hour, now.minute, now.second)
     text = font.render( time, True, ( 255, 255, 255))
 
