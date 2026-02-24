@@ -10,6 +10,8 @@ HEIGHT =  600   # 高
 FONTS  = "Monospace" # フォントフェース
 POINTS =  200   # フォントポイント
 
+# os.environ["DISPLAY"] = ":0.0" # メインディスプレイ
+
 ### モジュール初期化
 pygame.init()
 
@@ -18,6 +20,7 @@ clock = pygame.time.Clock()
 
 ### 画面設定
 surface = pygame.display.set_mode(( WIDTH, HEIGHT))
+# surface = pygame.display.set_mode(( WIDTH, HEIGHT), pygame.FULLSCREEN)
 
 ### 無限ループ
 while True:
