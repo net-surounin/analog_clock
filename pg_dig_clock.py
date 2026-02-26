@@ -21,6 +21,8 @@ clock = pygame.time.Clock()
 ### 画面設定
 # surface = pygame.display.set_mode(( WIDTH, HEIGHT))
 surface = pygame.display.set_mode(( WIDTH, HEIGHT), pygame.FULLSCREEN)
+# マウスカーソルを非表示にする
+pygame.mouse.set_visible(False)
 
 ### 無限ループ
 while True:
